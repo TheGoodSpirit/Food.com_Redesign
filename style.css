@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Poppins&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.25s;
+}
+:root {
+    --primary-color: crimson;
+    --primitive-color: rgb(135, 135, 135);
+    --secondary-color: rgba(220, 20, 60, 0.627);
+}
+span {
+    color: var(--primary-color);
+}
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: #000;
+    font-weight: 900;
+    font-size: 2.5rem;
+    font-family: 'Kodchasan', sans-serif;
+}
+nav {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links {
+    color: #000;
+}
+.links:hover {
+    color: var(--primary-color);
+}
+button[class="serch-btn"] {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    justify-content: center;
+    background-color: var(--primary-color);
+}
+button[class="serch-btn"] ion-icon {
+    color: #fff;
+}
+/* intro section */
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    padding: 10px 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+.intro {
+    background: url("Images/img1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.intro .content {
+    max-width: 900px;
+}
+.intro .content h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Kodchasan', sans-serif;
+    color: #000;
+    background: linear-gradient(90deg, rgba(36,0,6,1) 0%, rgba(121,9,93,1) 53%, rgba(160,6,69,1) 100%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.intro .content p {
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+.btn {
+    font-size: 1rem;
+    color: #fff;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Kodchasan', sans-serif;
+    background: var(--primary-color);
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+.btn:hover {
+   border: 1px solid var(--primary-color);
+   background: transparent;
+   color: var(--primary-color);
+}

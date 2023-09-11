@@ -13,6 +13,15 @@
 span {
     color: var(--primary-color);
 }
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    font-family: 'Kodchasan', sans-serif;
+    color: #000;    
+}
+p {
+    font-family: 'Poppins', sans-serif;
+}
 header {
     position: absolute;
     top: 0;
@@ -29,6 +38,9 @@ header {
     font-weight: 900;
     font-size: 2.5rem;
     font-family: 'Kodchasan', sans-serif;
+    background: linear-gradient(90deg, rgba(36,0,6,1) 0%, rgba(121,9,93,1) 53%, rgba(160,6,69,1) 100%, rgba(0,212,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 nav {
     gap: 20px;
@@ -59,7 +71,7 @@ section {
     width: 100%;
     min-height: 100vh;
     display: flex;
-    padding: 10px 50px;
+    padding: 30px 50px;
     justify-content: flex-start;
     align-items: center;
 }
@@ -76,9 +88,6 @@ section {
     font-weight: 900;
     font-family: 'Kodchasan', sans-serif;
     color: #000;
-    background: linear-gradient(90deg, rgba(36,0,6,1) 0%, rgba(121,9,93,1) 53%, rgba(160,6,69,1) 100%, rgba(0,212,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 .intro .content p {
     color: #000;
@@ -100,4 +109,21 @@ section {
    border: 1px solid var(--primary-color);
    background: transparent;
    color: var(--primary-color);
+}
+.testimonials{
+    width: 100%;
+    flex-direction: column;
+}
+.testimonials .container {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.testimonials .container .box {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }

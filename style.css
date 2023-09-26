@@ -5,9 +5,22 @@
     box-sizing: border-box;
     transition: all 0.25s;
 }
+.imgbox {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.title {
+    text-align: center;
+}
+.title h1 {
+    color: #3d4169;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
 /* ---------- Header ---------- */
 header {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -47,7 +60,9 @@ nav {
     background: transparent;
     border: 1px solid #3d4169;
 }
-.btn:hover {
+.btn:hover, 
+.main .box:hover {
+    cursor: pointer;
     box-shadow: 0px 2px 10px #3d416976;
 }
 /* ---------- Dropdown Menu ----------*/
@@ -96,11 +111,12 @@ section {
     gap: 20px;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 .hero {
     flex-direction: column;
     align-items: flex-start;
-    min-height: 100vh;
+    min-height: 90vh;
     background: url('https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
     background-position: left;
     background-size: cover;
@@ -119,15 +135,18 @@ section {
     justify-content: center;
 }
 .ava {
+    flex-direction: row;
     justify-content: space-around;
 }
-.ava .main {
+.main, .container  {
+    position: relative;
     gap: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ava .main .box {
+.main .box {
+    position: relative;
     gap: 20px;
     padding :10px 20px;
     display: flex;
@@ -136,21 +155,54 @@ section {
     border-radius: 5px;
     background: #3d4169;
 }
-.ava .main .box .txt h3 {
+.main .box .txt h3 {
     color: #fff;
     font-weight: 600;
 }
-.ava .hero .main .box .txt p {
+ .main .box .txt p {
     color: #fff;
     font-weight: 100;
     font-size: 0.8rem;
 }
-.ava .main .box ion-icon {
+.main .box ion-icon {
     color: #3d4169;
     padding: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: 50%;
+}
+.main .box:hover {
+    transform: scale(1);
+}
+.popular {
+    gap: 50px;
+}
+.popular .container {
+    gap: 40px;
+}
+.popular .container .main .box .txt h3 {
+    color: #3d4169;
+    font-weight: 600;
+}
+.popular .container .main .box .txt p {
+    color: #000;
+    font-size: 0.8rem;
+}
+.popular .container .main .box {
+  background: transparent;
+   flex-direction: column;
+   border: 1px solid #3d4169;
+}
+.popular .container .main .box .btn {
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+    display: none;
+    border-radius: 0px;
+}
+.popular .container .main .box:hover .btn {
+    bottom: 0px;
+    display: block;
 }

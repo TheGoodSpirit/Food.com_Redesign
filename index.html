@@ -4,88 +4,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Icons -->
+    <!-- Icon here -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
-
-    <!-- link css -->
-    <link rel="stylesheet" href="style.css">
+    <style>
+        
+    </style>
 </head>
 
 <body>
     <header>
-        <a href="" class="logo">Food<span>.</span></a>
+        <a href="" class="logo">
+            <ion-icon name="shield-checkmark"></ion-icon>
+            <span>Wiser</span>University
+        </a>
         <nav>
-            <a href="" class="links">Recipes</a>
-            <a href="" class="links">Cuisine</a>
-            <a href="" class="links">Popular</a>
-            <a href="" class="links">Seasonal</a>
-            <button class="serch-btn">
-                <ion-icon name="search-outline"></ion-icon>
-            </button>
+            <a href="" class="links">Home</a>
+            <a href="" class="links">Courses</a>
+            <div class="menu">
+                <span>Blog</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
+                <div class="dropdown-content">
+                    <a href="">one</a>
+                    <a href="">two</a>
+                    <a href="">three</a>
+                </div>
+            </div>
+            <div class="menu">
+                <span>Page</span>
+                <ion-icon name="caret-down-outline"></ion-icon>
+                <div class="dropdown-content">
+                    <a href="">one</a>
+                    <a href="">two</a>
+                    <a href="">three</a>
+                </div>
+            </div>
+            <a href="" class="links">Contact</a>
         </nav>
+        <button class="btn">Apply Now</button>
     </header>
 
-    <section class="intro" id="intro">
-        <div class="content">
-            <h2>People who love to eat <br> are always the best <br> people.</h2>
-            <p>Food, in the end, in our own tradition, is <br> something holy. It’s not about nutrients and <br> calories. It’s about sharing. It’s about honesty. <br> It’s about identity.</p>
-            <a href="#about" class="btn">Recipes</a>
+
+    <section class="hero">
+        <h1>Boost your <span>skills</span> <br> with new way of <br> <span>Learning.</span></h1>
+        <div class="CTA">
+            <button class="btn">Get Started</button>
+            <button class="btn outline">Take a Tour</button>
         </div>
     </section>
 
-    <section class="testimonials" id="testimonials">
-        <div class="content">
-            <h2>What <span>people</span> say </h2>
-            <p class="caption">Testimonials</p>
-        </div>
-        <div class="container">
+    <section class="ava">
+        <div class="main">
             <div class="box">
-                <div class="img">
-                    <img src="./Images/testmonial2.jpg" alt="a person">
-                </div>
-                <h3>christimahon</h3>
-                <p>" Lorem ipsum dolor sit amet consectetur. Pellentesque nec adipiscing cum dictumst. Malesuada et risus nullam sagittis elementum in. Turpis amet et sed adipiscing eu non nec arcu. Eleifend nunc nulla viverra euismod. "</p>
-                <div class="stars">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
+                <ion-icon name="school-outline"></ion-icon>
+                <div class="txt">
+                    <h3>Scholarship</h1>
+                    <p>Available</p>
                 </div>
             </div>
+        </div>
+        <div class="main">
             <div class="box">
-                <div class="img">
-                    <img src="./Images/testmonial1.jpg" alt="a person">
+                <ion-icon name="school-outline"></ion-icon>
+                <div class="txt">
+                    <h3>Scholarship</h1>
+                    <p>Available</p>
                 </div>
-                <h3>christimahon</h3>
-                <p>" Lorem ipsum dolor sit amet consectetur. Pellentesque nec adipiscing cum dictumst. Malesuada et risus nullam sagittis elementum in. Turpis amet et sed adipiscing eu non nec arcu. Eleifend nunc nulla viverra euismod. "</p>
-                <div class="stars">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star-half"></ion-icon>
+            </div>
+        </div>
+        <div class="main">
+            <div class="box">
+                <ion-icon name="school-outline"></ion-icon>
+                <div class="txt">
+                    <h3>Scholarship</h1>
+                    <p>Available</p>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="box">
+                <ion-icon name="school-outline"></ion-icon>
+                <div class="txt">
+                    <h3>Scholarship</h1>
+                    <p>Available</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="recipes" id="recipes">
-        <div class="content">
-            <h2>What We're<span> Craving </span></h2>
-            <p class="caption">Our recipes</p>
-        </div>
-        <div class="container">
-            <div class="box">
-                <div class="img">
-                    <img src="./Images/food1.jpg" alt="a person">
-                    <h3>christimahon</h3>
-                </div>
-            </div>
-        </div>
-    </section>
 </body>
+
 </html>

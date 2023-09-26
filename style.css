@@ -1,166 +1,156 @@
-@import url('https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&family=Poppins&display=swap');
+/* Add your CSS here */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: all 0.25s;
 }
-:root {
-    --primary-color: crimson;
-    --primitive-color: rgb(135, 135, 135);
-    --secondary-color: rgba(220, 20, 60, 0.627);
-}
-span {
-    color: var(--primary-color);
-}
-.caption {
-    text-align: center;
-}
-.content {
-    max-width: 900px;
-}
-.content h2 {
-    font-size: 3rem;
-    font-weight: 900;
-    font-family: 'Kodchasan', sans-serif;
-    color: #000;
-}
-.content p {
-    color: #000;
-    font-family: 'Poppins', sans-serif;
-}
-h3 {
-    font-weight: 700;
-    text-transform: capitalize;
-}
-.img {
-    display: flex;
-    align-items: center;
-    justify-content: center; 
-}
-img {
-    border-radius: 50%;
-    height: 75px;
-    width: 75px;
-    object-fit: cover;
-}
-.stars {
-    gap: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.stars ion-icon {
-    color: var(--secondary-color);
-}
+/* ---------- Header ---------- */
 header {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 1;
     width: 100%;
-    padding: 20px 50px;
+    z-index: 1;
+    padding: 10px 20px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
+    background: #fff;
 }
 .logo {
-    color: #000;
-    font-weight: 900;
-    font-size: 2.5rem;
-    font-family: 'Kodchasan', sans-serif;
-    background: linear-gradient(90deg, rgba(36,0,6,1) 0%, rgba(121,9,93,1) 53%, rgba(160,6,69,1) 100%, rgba(0,212,255,1) 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+.logo span {
+    color: #3d4169;
 }
 nav {
     gap: 20px;
     display: flex;
     align-items: center;
-    justify-content: center; 
-}
-.links {
-    color: #000;
+    justify-content: space-around;
 }
 .links:hover {
-    color: var(--primary-color);
+    color: #3d4169;
 }
-button[class="serch-btn"] {
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    border-radius: 50px;
-    justify-content: center;
-    background-color: var(--primary-color);
-}
-button[class="serch-btn"] ion-icon {
-    color: #fff;
-}
-/* intro section */
-section {
-    position: relative;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    padding: 30px 50px;
-    justify-content: center;
-    align-items: center;
-}
-.intro {
-    justify-content: flex-start;
-    background: url("Images/img1.jpg");
-    background-size: cover;
-    background-position: center;
-}
-
 .btn {
-    font-size: 1rem;
     color: #fff;
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-align: center;
-    font-family: 'Kodchasan', sans-serif;
-    background: var(--primary-color);
-    display: inline-block;
-    text-decoration: none;
-    border: 1px solid transparent;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    background-color: #3d4169;
+ 
+}
+.outline {
+    outline: none;
+    color: #3d4169;
+    background: transparent;
+    border: 1px solid #3d4169;
 }
 .btn:hover {
-   border: 1px solid var(--primary-color);
-   background: transparent;
-   color: var(--primary-color);
+    box-shadow: 0px 2px 10px #3d416976;
 }
-.testimonials{
+/* ---------- Dropdown Menu ----------*/
+.menu {
+    position: relative;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menu span {
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    top: 100%;
+    box-shadow: 0px 2px 10px #3d416976;
+    z-index: 1;
+    text-align: left;
+    flex-direction: column;
+}
+.dropdown-content a {
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+.dropdown-content a:hover {
+    color: #fff;
+    background-color: #3d4169;
+}
+.menu:hover .dropdown-content {
+    display: flex;
+}
+
+section {
+    position: relative;
+    top: 0;
+    left: 0;
     width: 100%;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-.testimonials .container {
-    gap: 50px;
     display: flex;
-    padding: 20px 10px;
-    align-items: center;
-    justify-content: center;
-}
-.testimonials .container .box {
+    padding: 50px;
     gap: 20px;
-    width: 50%;
-    display: flex;
-    padding: 20px 10px;
     align-items: center;
-    text-align: center;
     justify-content: center;
-    flex-direction: column;
-    border-radius: 10px;
-    border: 1px solid var(--primary-color);
 }
-.recipes, .recipes .container .box .img {
+.hero {
     flex-direction: column;
-    width: 100% ;
+    align-items: flex-start;
+    min-height: 100vh;
+    background: url('https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-position: left;
+    background-size: cover;
 }
-.recipes .container .box  {
-    width: 25%;
-    flex-wrap: wrap;
-    border-radius: 10px;
-    border: 1px solid var(--primary-color);
+.hero h1 {
+    font-size: 2.5rem;
+}
+.hero h1 span {
+    color: #3d4169;
+    font-weight: 900;
+}
+.CTA {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ava {
+    justify-content: space-around;
+}
+.ava .main {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ava .main .box {
+    gap: 20px;
+    padding :10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: #3d4169;
+}
+.ava .main .box .txt h3 {
+    color: #fff;
+    font-weight: 600;
+}
+.ava .hero .main .box .txt p {
+    color: #fff;
+    font-weight: 100;
+    font-size: 0.8rem;
+}
+.ava .main .box ion-icon {
+    color: #3d4169;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 5px;
 }

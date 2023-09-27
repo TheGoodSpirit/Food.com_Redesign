@@ -207,9 +207,46 @@ section {
     display: block;
 }
 .courses {
-    align-items: flex-start;
-    min-height: 90vh;
-    background: url('https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    min-height: 50vh;
+    background: url('https://cdn.pixabay.com/photo/2016/11/29/13/46/book-1869969_1280.jpg');
     background-position: left;
     background-size: cover;
+}
+.courses .searchbox input[type="search"] {
+    color: #3d4169;
+    outline: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+/* .contact {
+    align-items: flex-end;
+} */
+.contact form {
+    gap: 20px;
+    padding: 20px 30px;
+    display: flex;
+    min-width: 400px;
+    align-items: flex-start ;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid #3d4169;
+    background-color: #fff;
+}
+/* .contact .title {
+    text-align: right;
+} */
+.contact form .input {
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact form .input input, .contact form .input textarea {
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #3d4169;
 }

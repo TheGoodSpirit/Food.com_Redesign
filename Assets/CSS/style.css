@@ -297,28 +297,43 @@ section {
     color:#000;
 }
 .footer {
-    align-items: flex-start;
+    gap: 40px;
+    align-items: center;
     background-color: #3d4169;
 }
-.footer .title a,
-.footer .title a span {
-    color: #fff;
+.footer > a,
+.footer > a span {
+    color: #3d4169;
+}
+.footer > a {
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid #fff;
 }
 .footer .container {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
 }
 .footer .container .col1 .title  h1{
     color: #fff;
+    margin-bottom: 10PX;
 }
 .footer .container .col1 {
-    gap: 6px;
+    gap: 5px;
     color: #fff;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
 }
+.footer > p, 
 .footer .container .col1 .links{
     font-weight: 300;
+    font-size: 0.8rem;
+}
+.footer .container .col1 .links:hover {
+    color: #39d9fc;
 }
